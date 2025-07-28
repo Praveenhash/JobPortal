@@ -2,6 +2,7 @@ package com.praveen.jobapplication.controller;
 
 import com.praveen.jobapplication.Entity.Job;
 import com.praveen.jobapplication.service.JobService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -13,11 +14,13 @@ import java.util.List;
 @RestController
 public class JobController {
 
+    @Autowired
     private JobService jobService;
 
-    public JobController(JobService jobService){
-        this.jobService = jobService;
-    }
+//    @Autowired
+//    public JobController(JobService jobService){
+//        this.jobService = jobService;
+//    }
 
     @GetMapping("/jobs")
     public ResponseEntity<List<Job>> findAll() {
