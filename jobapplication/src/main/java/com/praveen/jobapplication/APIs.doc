@@ -1,0 +1,28 @@
+-----------------Job API-------------------
+GET: http://localhost:8080/jobs
+POST: http://localhost:8080/jobs
+PUT: http://localhost:8080/jobs/1
+DELETE: http://localhost:8080/jobs/1
+
+
+GET: http://localhost:8080/jobs/1    -> Get job by id
+
+
+----------------Company API-----------------
+GET: http://localhost:8080/company
+POST: http://localhost:8080/company/1
+PUT: http://localhost:8080/company/1
+DELETE: http://localhost:8080/company/3
+
+
+GET: http://localhost:8080/company/3   ---> Get company by id
+
+
+
+---------------Review API-------------------
+GET: http://localhost:8080/companies/1
+POST: http://localhost:8080/companies/2/reviews
+PUT: http://localhost:8080/companies/2/reviews/4
+DELETE: http://localhost:8080/companies/2/reviews/4
+
+GET: http://localhost:8080/companies/1/reviews/1    -> Get review by id
